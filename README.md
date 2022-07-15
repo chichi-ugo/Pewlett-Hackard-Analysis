@@ -29,9 +29,11 @@ With this established, we were able to determine the following in our further an
   ![](https://github.com/chichi-ugo/Pewlett-Hackard-Analysis/blob/main/Images/title_count.PNG?raw=true)
      - This table helps us to understand what roles will need to be filled when hiring new employees and how many people within each role they will need to hire. 
 
-- A mentorship initiative is proposed to help ease the transition for new-hires in those roles. In order to quantify how many employees are eligible to become mentors, we set the parameter that mentors birthdates fell in the range of January 1, 1965 and December 31, 1965. We also excluded all non-current employees from this dataset.
-  ![](https://github.com/chichi-ugo/Pewlett-Hackard-Analysis/blob/main/Images/mentor_eligible.PNG?raw=true)
-     - Though not depicted in the image above, we found that the total number of eligible mentors came out to be 1,549 employees.
+- A mentorship initiative is proposed to help ease the transition for new-hires in those roles. In order to quantify how many employees are eligible to become mentors, we set the parameter that mentors birthdates fell in the range of January 1, 1965 and December 31, 1965. We also excluded all non-current employees from this dataset. There are a total of 1,549 eligible mentors.
+
+Total Number of Mentors | Mentors by Title
+:----------------------:|:-----------------:
+![](https://github.com/chichi-ugo/Pewlett-Hackard-Analysis/blob/main/Images/mentor_eligible.PNG?raw=true) | ![](https://github.com/chichi-ugo/Pewlett-Hackard-Analysis/blob/main/Images/tot_mentors.PNG?raw=true)
 
 ## Summary
 - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
@@ -56,7 +58,6 @@ With this established, we were able to determine the following in our further an
     ![](https://github.com/chichi-ugo/Pewlett-Hackard-Analysis/blob/main/Images/retire_dept_count.PNG?raw=true)
 
 - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-  - [here](https://github.com/chichi-ugo/Pewlett-Hackard-Analysis/blob/main/queries.sql#:~:text=%2D%2D%20Retiring%20employees,.emp_no%3B)
-
-
-# ![](__?raw=true)
+  - Based off the criteria for our mentorship elegibility, we can see that there are far fewer people to be mentors than there are vacancies after the retirees leave. The image below shows the breakdown between titles of eligible mentors:
+  ![](https://github.com/chichi-ugo/Pewlett-Hackard-Analysis/blob/main/Images/mentor_count_bytitle.PNG?raw=true)
+  We see that each tile is lacking in Mentors and this could put the next generation of PH employees at a disadvantage. We suggest Pewlett Hackarde should consider broadening their mentorship eligibility criteria in order to increase the numbers.
