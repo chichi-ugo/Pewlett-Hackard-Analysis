@@ -60,4 +60,4 @@ Total Number of Mentors | Mentors by Title
 - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
   - Based off the criteria for our mentorship elegibility, we can see that there are far fewer people to be mentors than there are vacancies after the retirees leave. The image below shows the breakdown between titles of eligible mentors:
   ![](https://github.com/chichi-ugo/Pewlett-Hackard-Analysis/blob/main/Images/mentor_count_bytitle.PNG?raw=true)
-  We see that each tile is lacking in Mentors and this could put the next generation of PH employees at a disadvantage. We suggest Pewlett Hackarde should consider broadening their mentorship eligibility criteria in order to increase the numbers.
+  - We see that each tile is lacking in Mentors and this could put the next generation of PH employees at a disadvantage. We suggest for Pewlett Hackard to consider broadening their mentorship eligibility criteria in order to increase the numbers.
