@@ -11,7 +11,7 @@ FROM employees AS e
     INNER JOIN titles AS ti
         ON (e.emp_no = ti.emp_no)
     WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
-ORDER BY e.emp_no
+ORDER BY e.emp_no;
 
 -- Use Dictinct with Orderby to remove duplicate rows
 SELECT DISTINCT ON (rt.emp_no) rt.emp_no,
@@ -48,4 +48,4 @@ INNER JOIN titles AS ti
 ON (e.emp_no = ti.emp_no)
 WHERE (de.to_date = '9999-01-01') 
       AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
-ORDER BY e.emp_no
+ORDER BY e.emp_no;

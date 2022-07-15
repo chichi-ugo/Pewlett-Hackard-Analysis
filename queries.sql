@@ -180,3 +180,44 @@ INNER JOIN departments as d
 ON (de.dept_no = d.dept_no)
 WHERE dept_name IN ('Sales','Development');
 
+
+-- Mentorship titles count
+SELECT COUNT (me.emp_no), me.title
+FROM mentorship_eligibilty AS me
+GROUP BY me.title
+ORDER BY COUNT(me.emp_no)DESC;
+
+-- All employees by department
+SELECT DISTINCT ON (de.emp_no) d.dept_name, de.emp_no, de.dept_no, e.first_name, e.last_name
+INTO emp_dept
+FROM departments AS d
+INNER JOIN dept_emp AS de
+ON (d.dept_no = de.dept_no)
+INNER JOIN employees AS e
+ON (de.emp_no = e.emp_no)
+ORDER BY de.emp_no;
+
+SELECT COUNT(ed.emp_no), ed.dept_name
+INTO emp_dept_count
+FROM emp_dept AS ed
+GROUP BY ed.dept_name
+ORDER BY COUNT(ed.emp_no)DESC;
+
+-- Retiring employees by department
+SELECT DISTINCT ON (de.emp_no) d.dept_name, de.emp_no, de.dept_no, e.first_name, e.last_name
+INTO retire_dept
+FROM departments AS d
+INNER JOIN dept_emp AS de
+ON (d.dept_no = de.dept_no)
+INNER JOIN employees AS e
+ON (de.emp_no = e.emp_no)
+WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+    AND (e.hire_date BETWEEN '1985-01-01' AND '1988-12-31')
+ORDER BY de.emp_no;
+
+
+SELECT COUNT(rd.emp_no), rd.dept_name
+INTO retire_dept_count
+FROM retire_dept AS rd
+GROUP BY rd.dept_name
+ORDER BY COUNT(rd.emp_no)DESC;
