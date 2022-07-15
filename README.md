@@ -5,7 +5,7 @@ Company-wide Database analysis using Postgres SQL
 In this project, we have been tasked with assisting in a company wide analysis for Pewlett Hackard to provide detailed information concerning the numbers of employees who will be retiring soon. 
 
 ### Purpose
-The goal of this analysis is to determine the impact that the company will face when by how many employees are posed to leave due to retirement, and to help provide information to prepare the company's hiring initiative. 
+The goal of this analysis is to determine the impact that the company will face by how many employees are posed to leave due to retirement, and to also provide information to help prepare the company's hiring initiative. 
 
 ## Results
 To get a sense of the scope, below depicts the total number of employees at Pewlett Hackard: 300,024.
